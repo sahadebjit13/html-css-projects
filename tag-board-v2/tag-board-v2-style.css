@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat fixed;
+    background-size: cover;
+}
+ul,ol{
+    list-style-position: inside;
+}
+.mainContainer{
+    width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 1px black;
+    background-color: rgb(173, 147, 0);
+}
+.flexibleRow{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.headingBox{
+    flex: 1 1 0;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    word-wrap: break-word;
+    padding: 15px;
+    background-color: rgb(255, 217, 0);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+.infoBox{
+    flex: 1 1 0;
+    width: auto;
+    height: auto;
+    align-self: stretch;
+    min-width: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    word-wrap: break-word;
+    padding: 15px;
+    background-color: rgb(255, 217, 0);
+}

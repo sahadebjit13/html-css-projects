@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // function factorial(n)
+        // {
+        //     var i = 1;
+        //     var fact = 1;
+        //     while(i <= n){
+        //         fact *= i;
+        //         i++;
+        //     }
+        //     return fact;
+        // }
+        // console.log(factorial(5));
+        
+
+        // var n = 20
+        // document.writeln("<table>")
+        // document.writeln("<th>-</th>")
+        // for (var i = 1; i <= n; i++) {
+        //     document.writeln("<th>" + i + "</th>")
+        // }
+
+
+        // for (var i = 1; i <= n; i++) {
+        //     document.writeln("<tr>")
+        //     document.writeln("<td><b>" + i + "</b></td>")
+        //     for (var j = 1; j <= n; j++) {
+        //         //document.write(i+" x "+j+" = "+i*j+"<br>")
+        //         document.writeln("<td>" + i * j + "</td>")
+        //     }
+        //     document.writeln("</tr>")
+        // }
+        // document.write("</table>")
+
+
+        // const square = function(n) {
+        //     return n * n
+        // }
+        // console.log(square(5))
+
+        // const s = (n) => {
+        //      return n*n
+        // }
+        // console.log(s(4))
+
+
+        /************************Callback Function************************/
+        // const isEven = (n) => {
+        //     return n % 2 == 0
+        // }
+        // let printMsg = (evenFunc, num) => {
+        //     let queryNum = evenFunc(num)
+        //     console.log(queryNum?`${num} is an even number`:`${num} is an odd number`)
+        // }
+        // for(let i = 1; i <= 10; i++)
+        // printMsg(isEven, i)
+
+
+        /**************************JSON Objects**************************/
+        var jsonRef = {
+            data:[
+                { company: "Amazon", headquaters: "Seattle", country: "USA", employees: 1461000}, 
+                { company: "Accenture", headquaters: "Dublin", country: "Ireland", employees: 738000},
+                { company: "TCS", headquaters: "Mumbai", country: "India", employees: 614795},
+                { company: "Teleperformance", headquaters: "Paris", country: "France", employees: 410000},
+                { company: "Cognizant", headquaters: "New Jersey", country: "USA", employees: 351500},
+                { company: "Siemens", headquaters: "Munich", country: "Germany", employees: 316000},
+                { company: "Infosys", headquaters: "Bangalore", country: "India", employees: 300000},
+                { company: "IBM", headquaters: "Armonk", country: "USA", employees: 297900},
+                { company: "Microsoft", headquaters: "Washington", country: "USA", employees: 221000}
+            ]
+        }
+        const jsonMap = (json) => {
+            let count;
+            json.data.forEach(ele => {
+                console.log(ele.company);
+                
+            //     if(count[ele.country] == null){
+            //         count[ele.country] = 0
+            //     }
+            //     count[ele.country] = count[ele.country] + ele.employees
+            });
+        }
+        jsonMap(jsonRef)
+        //console.log(jsonMap(jsonRef))
+
+
+        
+    </script>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(wallpaper.jpg) no-repeat;
+            background-size: cover;
+            height: max-content;
+            width: max-content;
+            color: white;
+        } */
+
+        table, th, td{
+            border: 1px solid black;
+            text-align: right;
+            font-size: 30px;
+            padding: 5px;
+        }
+        
+    </style>
+    <title>JS-1-Example</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            
+
+            <input type="button" value="green" onclick="green()">
+            <input type="button" value="blue" onclick="blue()">
+        </form>
+    </div>
+</body>
+</html>
